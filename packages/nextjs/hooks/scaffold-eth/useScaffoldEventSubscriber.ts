@@ -28,7 +28,6 @@ export const useScaffoldEventSubscriber = <
 
   return useContractEvent({
     address: deployedContractData?.address,
-    // @ts-ignore
     abi: deployedContractData?.abi as Abi,
     chainId: getTargetNetwork().id,
     listener: listenerWithIndexedArgs,
